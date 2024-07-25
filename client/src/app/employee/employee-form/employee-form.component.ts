@@ -60,7 +60,6 @@ import { Employee } from '../employee';
         <mat-radio-button name="level" value="mid">Mid</mat-radio-button>
         <mat-radio-button name="level" value="senior">Senior</mat-radio-button>
       </mat-radio-group>
-      <br />
       <button
         mat-raised-button
         color="primary"

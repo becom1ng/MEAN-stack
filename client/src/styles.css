@@ -16,12 +16,12 @@
 html,
 body {
   height: 100%;
-  width: 100%;
-}
-body {
-  margin: 0;
   font-family: Roboto, "Open Sans", sans-serif;
   line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* Container */
@@ -39,7 +39,15 @@ body {
   max-width: var(--container-narrow);
 }
 
-/* Override to match theme */
+.employee-form {
+  min-width: 320px;
+}
+
+/* Overrides */
 .mat-mdc-card-title {
   color: var(--mat-app-text-color);
+}
+
+button.mdc-button {
+  border-radius: 10px;
 }

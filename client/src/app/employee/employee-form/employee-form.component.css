@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2rem;
+  padding: 1rem;
+}
+
+.mat-mdc-radio-group {
+  margin-bottom: 1rem;
 }
 
 .mat-mdc-radio-button ~ .mat-mdc-radio-button {
