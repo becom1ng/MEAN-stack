@@ -11,7 +11,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
       <span>Employees Management System</span>
     </mat-toolbar>
     <main>
-      <router-outlet />
+      <div class="container">
+        <router-outlet />
+      </div>
     </main>
   `,
   styleUrl: './app.component.css',
