@@ -1,0 +1,12 @@
+table {
+  width: 100%;
+
+  button:first-of-type {
+    margin-right: 1rem;
+  }
+}
+
+/* Override to match theme */
+.mat-mdc-card-title {
+  color: var(--mat-app-text-color);
+}
