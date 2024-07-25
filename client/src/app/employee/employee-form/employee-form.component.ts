@@ -4,6 +4,7 @@ import {
   EventEmitter,
   inject,
   input,
+  output,
   Output,
 } from '@angular/core';
 import { FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
@@ -75,11 +76,8 @@ export class EmployeeFormComponent {
   initialState = input<Employee>();
   private formBuilder = inject(FormBuilder);
 
-  @Output()
-  formValuesChanged = new EventEmitter<Employee>();
-
-  @Output()
-  formSubmitted = new EventEmitter<Employee>();
+  formValuesChanged = output<Employee>();
+  formSubmitted = output<Employee>();
 
   employeeForm = this.formBuilder.group({
     name: ['', [Validators.required, Validators.minLength(3)]],
