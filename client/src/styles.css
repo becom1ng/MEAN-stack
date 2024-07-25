@@ -38,3 +38,8 @@ body {
 .container-sm {
   max-width: var(--container-narrow);
 }
+
+/* Override to match theme */
+.mat-mdc-card-title {
+  color: var(--mat-app-text-color);
+}

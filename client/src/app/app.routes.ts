@@ -1,22 +1,30 @@
 import { Routes } from '@angular/router';
-import { EmployeeListComponent } from './employee/employee-list/employee-list.component';
 
 export const routes: Routes = [
   {
-    path: 'employees',
+    path: '',
     loadComponent: () =>
       import('./employee/employee-list/employee-list.component').then(
-        (m) => m.EmployeeListComponent
+        (c) => c.EmployeeListComponent
       ),
   },
   {
-    path: '',
-    redirectTo: 'employees',
-    pathMatch: 'full',
+    path: 'new',
+    loadComponent: () =>
+      import('./employee/add-employee/add-employee.component').then(
+        (c) => c.AddEmployeeComponent
+      ),
+  },
+  {
+    path: 'edit/:id',
+    loadComponent: () =>
+      import('./employee/edit-employee/edit-employee.component').then(
+        (c) => c.EditEmployeeComponent
+      ),
   },
   {
     path: '**',
-    redirectTo: 'employees',
+    redirectTo: '',
     pathMatch: 'full',
   },
 ];
