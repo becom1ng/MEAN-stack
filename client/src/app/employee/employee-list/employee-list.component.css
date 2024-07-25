@@ -5,3 +5,11 @@ table {
     margin-right: 1rem;
   }
 }
+
+.mat-mdc-row .mat-mdc-cell {
+  border: none;
+}
+
+.mat-mdc-row:hover .mat-mdc-cell {
+  background: rgba(150, 150, 150, 0.05);
+}
