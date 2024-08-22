@@ -7,6 +7,7 @@ import { employeeRouter } from './employee.routes';
 // Load environment variables from the .env file, where the LOCAL_URI is configured
 dotenv.config();
 
+// const { ATLAS_URI } = process.env; // use this if you have ATLAS_URI in your .env file
 const { LOCAL_URI } = process.env;
 
 if (!LOCAL_URI) {
